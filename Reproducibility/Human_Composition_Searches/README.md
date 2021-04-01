@@ -35,3 +35,9 @@ python get_SR_prots_and_Plot_RBPproportions_Heatmap.py
 ```
 
 This series of commands generates data appearing in Fig 1A,B and Fig S1.
+
+For analyses of the features of RS domains (e.g. composition, PTMs, isoforms), run the following commands in-sequence:
+
+```    
+python get_PTMs_and_map_to_UniprotIDs.py
+```
