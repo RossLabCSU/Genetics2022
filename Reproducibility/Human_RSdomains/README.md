@@ -53,3 +53,7 @@ python plot_RSHKDE_Compositions_Human_RSdomains.py
 ```    
 python plot_PTM_and_SRdipep_statistics.py
 ```
+
+```    
+python plot_FullComposition_Human_RSdomains.py
+```
