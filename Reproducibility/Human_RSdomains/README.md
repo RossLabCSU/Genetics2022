@@ -49,3 +49,7 @@ python calculate_RSdomain_Features.py
 ```    
 python plot_RSHKDE_Compositions_Human_RSdomains.py
 ```
+
+```    
+python plot_PTM_and_SRdipep_statistics.py
+```
