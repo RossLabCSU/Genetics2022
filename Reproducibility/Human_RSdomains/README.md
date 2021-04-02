@@ -35,7 +35,7 @@ python get_SR_prots_and_Plot_RBPproportions_Heatmap.py
 ```
 
 This series of commands generates Fig 1A, Fig 1B, Fig S1, and Table S1.
-</br></br>
+</br></br></br>
 For analyses of the features of RS domains (e.g. composition, PTMs, isoforms), run the following commands in-sequence:
 
 ```    
