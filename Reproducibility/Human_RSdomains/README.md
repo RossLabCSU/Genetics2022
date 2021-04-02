@@ -41,3 +41,11 @@ For analyses of the features of RS domains (e.g. composition, PTMs, isoforms), r
 ```    
 python get_PTMs_and_map_to_UniprotIDs.py
 ```
+
+```    
+python calculate_RSdomain_Features.py
+```
+
+```    
+python plot_RSHKDE_Compositions_Human_RSdomains.py
+```
