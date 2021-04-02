@@ -34,8 +34,8 @@ python gather_Combined_RBPs.py
 python get_SR_prots_and_Plot_RBPproportions_Heatmap.py
 ```
 
-This series of commands generates data appearing in Fig 1A,B and Fig S1.
-
+This series of commands generates Fig 1A, Fig 1B, Fig S1, and Table S1.
+</br>
 For analyses of the features of RS domains (e.g. composition, PTMs, isoforms), run the following commands in-sequence:
 
 ```    
@@ -57,3 +57,5 @@ python plot_PTM_and_SRdipep_statistics.py
 ```    
 python plot_FullComposition_Human_RSdomains.py
 ```
+
+This series of commands generates all figure panels appearing in Fig 2, Fig S4, and Fig S5. NOTE: the legend/key is only shown in the Fig 2A file but this legend indicates the categories for all figure panels for these three figures.
