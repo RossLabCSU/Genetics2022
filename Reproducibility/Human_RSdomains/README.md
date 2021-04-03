@@ -59,3 +59,10 @@ python plot_FullComposition_Human_RSdomains.py
 ```
 
 This series of commands generates all figure panels appearing in Fig 2, Fig S4, and Fig S5. NOTE: the legend/key is only shown in the Fig 2A file but this legend indicates the categories for all figure panels for these three figures.
+</br></br></br>
+For comparison of RS domains across human protein isoforms, run the following commands in-sequence:
+
+```
+python make_HumanIsoformMap_Uniprot_dict.py
+```
+
