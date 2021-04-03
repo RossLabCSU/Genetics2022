@@ -73,3 +73,7 @@ python get_SR_prots_ALL_ISOFORMS.py
 ```
 python analyze_HumanIsoform_RSdomainOverlap.py
 ```
+
+```
+python plot_PieChart_RSdomains_IsoformComparison.py
+```
