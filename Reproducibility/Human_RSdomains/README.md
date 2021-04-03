@@ -66,3 +66,10 @@ For comparison of RS domains across human protein isoforms, run the following co
 python make_HumanIsoformMap_Uniprot_dict.py
 ```
 
+```
+python get_SR_prots_ALL_ISOFORMS.py
+```
+
+```
+python analyze_HumanIsoform_RSdomainOverlap.py
+```
