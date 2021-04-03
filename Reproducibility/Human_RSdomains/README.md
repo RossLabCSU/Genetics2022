@@ -81,3 +81,5 @@ python plot_PieChart_RSdomains_IsoformComparison.py
 ```
 python plot_IsoformMatchingProportions.py
 ```
+
+This series of commands generates Fig 3 and Table S2.
