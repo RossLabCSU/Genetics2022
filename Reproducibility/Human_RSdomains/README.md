@@ -87,7 +87,11 @@ This series of commands generates Fig 3 and Table S2.
 For comparison of human SR/SR-related proteins in this study with those of other studies, run the following commands in-sequence:
 
 ```
-plot VennDiagrams_VariedCompositionThreshold.py
+python plot_VennDiagrams_VariedCompositionThreshold.py
+```
+
+```
+python plot_DatasetOverlaps_VennDiagrams.py
 ```
 
 This series of commands generates Fig 1C, Fig S3A, Fig S3C, and all venn diagrams appearing in Fig S2.
