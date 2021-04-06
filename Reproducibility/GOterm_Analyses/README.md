@@ -15,7 +15,3 @@ python get_GO_Annotations_Q8N5F7.py
 ```
 
 These two commands generate data appearing in Fig 1D, Fig S3B, Fig S3D, Table S7, and Table S8.
-</br></br></br>
-For analyses of the features of RS domains (e.g. composition, PTMs, isoforms), run the following commands in-sequence:
-
-```    
