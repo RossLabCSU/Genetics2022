@@ -59,7 +59,7 @@ python make_SRcompRange_BatchFile_DomainsOfLife.py Viruses
 ```    
 python get_SR_prots_above_CombinedSRthreshold_MultiOrganismVersion.py Viruses
 ```
-</br></br>
+</br>
 7. Once all of the commands listed above have finished running, each folder should contain a file ending in "SequenceDictionary" (.fasta file) and a file ending in "SR_proteins_with_Combined_S-R_Above_70" (.tsv file). Copy these files from each folder into a single location that also contains the XXXXXXXXXXXXXXXXXXx scripts.
 8. Navigate to this new location via command line and run the following commands in-sequence:
 
