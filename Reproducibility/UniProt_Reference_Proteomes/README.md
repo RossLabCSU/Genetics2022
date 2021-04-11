@@ -72,3 +72,33 @@ python plot_NumberOfProts_with_SRdomain_DomainsOfLife.py
 ```
 
 These two commands generate Fig 4A and Tables S3-S6.
+</br></br>
+For analyses of Pfam domain annotations among SR/SR-related proteins in the UniProt reference proteomes, run the following commands in-sequence:
+
+```    
+python fragment_FastaFiles.py
+```
+
+```    
+python make_Pfam_BatchFile.py
+```
+
+```    
+./Archaea_Pfam_BatchFile.bat
+```
+
+```    
+./Bacteria_Pfam_BatchFile.bat
+```
+
+```    
+./Eukaryota_Pfam_BatchFile.bat
+```
+
+```    
+./Viruses_Pfam_BatchFile.bat
+```
+
+```    
+python .py
+```
