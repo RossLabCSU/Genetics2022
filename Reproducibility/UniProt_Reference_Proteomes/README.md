@@ -14,7 +14,7 @@ python make_SRcompRange_BatchFile_DomainsOfLife.py Archaea
 ```
 
 ```    
-./RUN_LCD-Composer_Archaea_SRcompRANGE_Batch.bat
+.\RUN_LCD-Composer_Archaea_SRcompRANGE_Batch.bat
 ```
 
 ```    
@@ -27,7 +27,7 @@ python make_SRcompRange_BatchFile_DomainsOfLife.py Bacteria
 ```
 
 ```    
-./RUN_LCD-Composer_Bacteria_SRcompRANGE_Batch.bat
+.\RUN_LCD-Composer_Bacteria_SRcompRANGE_Batch.bat
 ```
 
 ```    
@@ -40,7 +40,7 @@ python make_SRcompRange_BatchFile_DomainsOfLife.py Eukaryota
 ```
 
 ```    
-./RUN_LCD-Composer_Eukaryota_SRcompRANGE_Batch.bat
+.\RUN_LCD-Composer_Eukaryota_SRcompRANGE_Batch.bat
 ```
 
 ```    
@@ -53,7 +53,7 @@ python make_SRcompRange_BatchFile_DomainsOfLife.py Viruses
 ```
 
 ```    
-./RUN_LCD-Composer_Viruses_SRcompRANGE_Batch.bat
+.\RUN_LCD-Composer_Viruses_SRcompRANGE_Batch.bat
 ```
 
 ```    
@@ -84,21 +84,33 @@ python make_Pfam_BatchFile.py
 ```
 
 ```    
-./Archaea_Pfam_BatchFile.bat
+.\Archaea_Pfam_BatchFile.bat
 ```
 
 ```    
-./Bacteria_Pfam_BatchFile.bat
+.\Bacteria_Pfam_BatchFile.bat
 ```
 
 ```    
-./Eukaryota_Pfam_BatchFile.bat
+.\Eukaryota_Pfam_BatchFile.bat
 ```
 
 ```    
-./Viruses_Pfam_BatchFile.bat
+.\Viruses_Pfam_BatchFile.bat
+```
+
+Note that Pfam server errors sometimes fail to generate results files for a small subset of commands specified in the batch files. In these instances, simply identify the skipped files and re-run the corresponding commands from the batch files.
+</br></br>
+Run the following commands in-seqeuence to generate Fig 4B-D and Tables S3-S6:
+
+```    
+python gather_DomainsOfLife_Pfam_Results.py
 ```
 
 ```    
-python .py
+python map_Pfams_to_SRprots.py
+```
+
+```    
+python plot_TopPfamAnnotations.py
 ```
