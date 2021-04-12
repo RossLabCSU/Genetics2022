@@ -101,7 +101,7 @@ python make_Pfam_BatchFile.py
 
 Note that Pfam server errors sometimes fail to generate results files for a small subset of commands specified in the batch files. In these instances, simply identify the skipped files and re-run the corresponding commands from the batch files.
 </br></br>
-Run the following commands in-seqeuence to generate Fig 4B-D and Tables S3-S6:
+Run the following commands in-seqeuence to generate Fig 4B-E and Tables S3-S6:
 
 ```    
 python gather_DomainsOfLife_Pfam_Results.py
