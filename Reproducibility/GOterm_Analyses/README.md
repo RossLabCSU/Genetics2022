@@ -13,7 +13,7 @@ python LCD-Composer_MultiProteome_MaxCompThreshold.py Human_R-richOnly_Results -
 ```
 
 ```
-python LCD-Composer_MultiProteome_MaxCompThreshold.py UP000005640_9606.fasta -a R -c 35 -x R_S -m 40_5
+python LCD-Composer_MultiProteome_MaxCompThreshold.py Human_S-richOnly_Results -a S -c 35 -x S_R -m 40_5
 ```
 
 ```
