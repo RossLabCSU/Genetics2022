@@ -22,6 +22,14 @@ python make_SRcompRange_BatchFile_DomainsOfLife.py Archaea
 python get_SR_prots_above_CombinedSRthreshold_MultiProteome.py Archaea
 ```
 
+```
+python LCD-Composer_MultiProteome_MaxCompThreshold.py Archaea_R-rich-only_RESULTS -a R -c 35 -x R_S -m 40_5
+```
+
+```
+python LCD-Composer_MultiProteome_MaxCompThreshold.py Archaea_S-rich-only_RESULTS -a S -c 35 -x S_R -m 40_5
+```
+
 In the Bacteria folder run the following commands:
 ```    
 python make_SRcompRange_BatchFile_DomainsOfLife.py Bacteria
@@ -33,6 +41,14 @@ python make_SRcompRange_BatchFile_DomainsOfLife.py Bacteria
 
 ```    
 python get_SR_prots_above_CombinedSRthreshold_MultiProteome.py Bacteria
+```
+
+```
+python LCD-Composer_MultiProteome_MaxCompThreshold.py Bacteria_R-rich-only_RESULTS -a R -c 35 -x R_S -m 40_5
+```
+
+```
+python LCD-Composer_MultiProteome_MaxCompThreshold.py Bacteria_S-rich-only_RESULTS -a S -c 35 -x S_R -m 40_5
 ```
 
 In the Eukaryota folder run the following commands:
@@ -48,6 +64,14 @@ python make_SRcompRange_BatchFile_DomainsOfLife.py Eukaryota
 python get_SR_prots_above_CombinedSRthreshold_MultiProteome.py Eukaryota
 ```
 
+```
+python LCD-Composer_MultiProteome_MaxCompThreshold.py Eukaryota_R-rich-only_RESULTS -a R -c 35 -x R_S -m 40_5
+```
+
+```
+python LCD-Composer_MultiProteome_MaxCompThreshold.py Eukaryota_S-rich-only_RESULTS -a S -c 35 -x S_R -m 40_5
+```
+
 In the Viruses folder run the following commands:
 ```    
 python make_SRcompRange_BatchFile_DomainsOfLife.py Viruses
@@ -59,6 +83,14 @@ python make_SRcompRange_BatchFile_DomainsOfLife.py Viruses
 
 ```    
 python get_SR_prots_above_CombinedSRthreshold_MultiProteome.py Viruses
+```
+
+```
+python LCD-Composer_MultiProteome_MaxCompThreshold.py Viruses_R-rich-only_RESULTS -a R -c 35 -x R_S -m 40_5
+```
+
+```
+python LCD-Composer_MultiProteome_MaxCompThreshold.py Viruses_S-rich-only_RESULTS -a S -c 35 -x S_R -m 40_5
 ```
 
 7. Once all of the commands listed above have finished running, each folder should contain a file ending in "SequenceDictionary" (.fasta file) and a file ending in "SR_proteins_with_Combined_S-R_Above_70" (.tsv file). Copy these files from each folder into a single location that also contains the XXXXXXXXXXXXXXXXXXx scripts.
