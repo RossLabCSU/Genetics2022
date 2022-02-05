@@ -11,8 +11,8 @@ def main():
     proteome = 'UP000005640_9606'
     abbrev = 'Hsapiens'
     
-    prot_sets = ['New_NonRBPs', 'NewRBPs_LCprotsExcluded', 'New_RBPs_LC-MixedChargeProtsExcluded', 'New_RBPs_LC-MouseHomologProtsExcluded']
-    filenames = ['TableS7_NonRBP_SR-relatedProteins_GOresults', 'Fig1D_NewRBPs_LCprotsExcluded', 'FigS3B_NewRBPs_LC-MixedChargeProtsExcluded', 'FigS3D_NewRBPs_LC-MouseHomologProtsExcluded']
+    prot_sets = ['New_NonRBPs', 'NewRBPs_LCprotsExcluded', 'New_RBPs_LC-MixedChargeProtsExcluded', 'New_RBPs_LC-MouseHomologProtsExcluded', 'All_SRprots_Long_and_Caceres_2009', 'Human_R-richOnly_FILTERED_PROTEIN_LIST', 'Human_S-richOnly_FILTERED_PROTEIN_LIST']
+    filenames = ['TableS11_NonRBP_SR-relatedProteins_GOresults', 'Fig1D_NewRBPs_LCprotsExcluded', 'FigS3B_NewRBPs_LC-MixedChargeProtsExcluded', 'FigS3D_NewRBPs_LC-MouseHomologProtsExcluded', 'TableS2_GOterm_Results_LongAndCaceres_Proteins', 'TableS3_Human_R-richOnly_GOterm_Results', 'TableS4_Human_S-richOnly_GOterm_Results']
     
     assoc = get_assoc(abbrev)
     for i in range(len(prot_sets)):
