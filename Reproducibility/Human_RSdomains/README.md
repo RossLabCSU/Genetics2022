@@ -1,8 +1,8 @@
 # Reproducing SR and SK searches (and subsequent analyses) for the human proteome
 
 ### Instructions
-1. Download LCD-Composer.py from https://github.com/RossLabCSU/LCD-Composer, as well as all files in the Human_Composition_Searches directory.
-2. Extract all compressed files in the same location as LCD-Composer.py and other Python scripts. NOTE: the "UP000005640_9606_additional.fasta" file containing all isoform sequences for human proteins has been pre-filtered to exclude sequences that are classified as non-canonical readthrough protein products.
+1. Download LCD-Composer.py from https://github.com/RossLabCSU/LCD-Composer, as well as all files in the Human_RSdomains directory.
+2. Extract all compressed files in the same location as LCD-Composer.py and other Python scripts. NOTE: the "UP000005640_9606_additional.fasta" file containing all isoform sequences for human proteins has been pre-filtered to exclude sequences that are classified as non-canonical readthrough protein products or as protein fragments.
 3. Navigate to appropriate folder via command line.
 4. Run the following commands in-sequence (NOTE: each run must be completed before issuing the next command):
 
