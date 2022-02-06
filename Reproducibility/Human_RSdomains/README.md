@@ -7,11 +7,11 @@
 4. Run the following commands in-sequence (NOTE: each run must be completed before issuing the next command):
 
 ```    
-python make_Human_SRsearch_BatchFile.py
+python make_Human_SRsearch_and_SKsearch_BatchFile.py
 ```
 
 ```
-.\RUN_LCD-Composer_Human_SRcompRANGE_Batch.bat
+.\RUN_LCD-Composer_Human_SRsearch_and_SKsearch_Batch.bat
 ```
 
 ```    
