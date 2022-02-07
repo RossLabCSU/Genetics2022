@@ -93,7 +93,7 @@ python LCD-Composer_MultiProteome_MaxCompThreshold.py Viruses_R-rich-only_RESULT
 python LCD-Composer_MultiProteome_MaxCompThreshold.py Viruses_S-rich-only_RESULTS -a S -c 35 -x S_R -m 40_5
 ```
 
-7. Once all of the commands listed above have finished running, each folder should contain a file ending in "SequenceDictionary" (.fasta file) and a file ending in "SR_proteins_with_Combined_S-R_Above_70" (.tsv file). Copy these files from each folder into a single location that also contains the XXXXXXXXXXXXXXXXXXx scripts.
+7. Once all of the commands listed above have finished running, each folder should contain a file ending in "SequenceDictionary" (.dat) and a file ending in "SR_proteins_with_Combined_S-R_Above_70" (.tsv file). Copy these files from each folder into a single location that also contains the XXXXXXXXXXXXXXXXXXx scripts.
 8. Navigate to this new location via command line and run the following commands in-sequence:
 
 ```    
@@ -104,41 +104,9 @@ python get_DomainsOfLife_OrganismList_df.py
 python plot_NumberOfProts_with_SRdomain_DomainsOfLife.py
 ```
 
-These two commands generate Fig 4A and Tables S3-S6.
+These two commands generate Fig 4A and Tables S6-S9.
 </br></br>
-For analyses of Pfam domain annotations among SR/SR-related proteins in the UniProt reference proteomes, run the following commands in-sequence:
-
-```    
-python fragment_FastaFiles.py
-```
-
-```    
-python make_Pfam_BatchFile.py
-```
-
-```    
-.\Archaea_Pfam_BatchFile.bat
-```
-
-```    
-.\Bacteria_Pfam_BatchFile.bat
-```
-
-```    
-.\Eukaryota_Pfam_BatchFile.bat
-```
-
-```    
-.\Viruses_Pfam_BatchFile.bat
-```
-
-Note that Pfam server errors sometimes fail to generate results files for a small subset of commands specified in the batch files. In these instances, simply identify the skipped files and re-run the corresponding commands from the batch files.
-</br></br>
-Run the following commands in-seqeuence to generate Fig 4B-E and Tables S3-S6:
-
-```    
-python gather_DomainsOfLife_Pfam_Results.py
-```
+For analyses of Pfam domain annotations among SR/SR-related proteins in the UniProt reference proteomes, run the following commands in-sequence to generate Fig 4B-E, as well as the final versions of Tables S6-S9:
 
 ```    
 python map_Pfams_to_SRprots.py
