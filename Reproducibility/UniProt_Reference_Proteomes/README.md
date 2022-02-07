@@ -93,7 +93,7 @@ python LCD-Composer_MultiProteome_MaxCompThreshold.py Viruses_R-rich-only_RESULT
 python LCD-Composer_MultiProteome_MaxCompThreshold.py Viruses_S-rich-only_RESULTS -a S -c 35 -x S_R -m 40_5
 ```
 
-7. Once all of the commands listed above have finished running, each folder should contain a file ending in "SequenceDictionary" (.dat) and a file ending in "SR_proteins_with_Combined_S-R_Above_70" (.tsv file). Copy these files from each folder into a single location that also contains the XXXXXXXXXXXXXXXXXXx scripts.
+7. Once all of the commands listed above have finished running, each folder should contain: 1) a file ending in "SequenceDictionary" (.dat file), 2) a file ending in "SR_proteins_with_Combined_S-R_Above_70" (.tsv file), 3) a file ending in "R-richOnly_RESULTS" (.tsv file), and 4) a file ending in "S-richOnly_RESULTS" (.tsv file). Copy these files from each folder into a single location that also contains the remaining scripts from this Github directory.
 8. Navigate to this new location via command line and run the following commands in-sequence:
 
 ```    
@@ -110,6 +110,10 @@ For analyses of Pfam domain annotations among SR/SR-related proteins in the UniP
 
 ```    
 python map_Pfams_to_SRprots.py
+```
+
+```    
+python map_Pfams_to_Srich_and_Rrich_prots.py
 ```
 
 ```    
