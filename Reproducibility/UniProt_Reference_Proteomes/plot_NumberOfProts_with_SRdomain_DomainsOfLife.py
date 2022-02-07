@@ -5,7 +5,7 @@ import seaborn as sns
 import pandas as pd
 domains = ['Archaea', 'Bacteria', 'Eukaryota', 'Viruses']
 taxonid_to_common = pickle.load(open('TaxonID_to_CommonOrganismName.dat', 'rb'))
-file_leaders = {'Archaea':'TableS3', 'Bacteria':'TableS4', 'Eukaryota':'TableS5', 'Viruses':'TableS6'}
+file_leaders = {'Archaea':'TableS6', 'Bacteria':'TableS7', 'Eukaryota':'TableS8', 'Viruses':'TableS9'}
 
 def main():
 
@@ -16,7 +16,7 @@ def main():
         'Proteome':[]
         }
     output = open('Number_of_SRproteins_Per_Organism.tsv', 'w')
-    output.write('\t'.join(['Domain of Life', 'File of Origin','Common Organism Name', 'Number of SR Proteins (isoforms included)']) + '\n')
+    output.write('\t'.join(['Domain of Life', 'File of Origin','Common Organism Name', 'Number of SR/SR-related Proteins (isoforms included)']) + '\n')
         
     index = 0
     for domain in domains:
@@ -62,7 +62,7 @@ def plot_eukaryota(df, human_count):
     plt.xticks([0], labels=['Eukaryota'], fontname='Arial', fontsize=12)
     plt.yticks(fontname='Arial', fontsize=12)
     plt.xlabel('Domain of Life', fontname='Arial', fontsize=14)
-    plt.ylabel('Number of Unique\nSR Protein-encoding Genes', fontname='Arial', fontsize=14)
+    plt.ylabel('Number of Unique Genes Encoding\nSR/SR-related Proteins', fontname='Arial', fontsize=14)
     fig = plt.gcf()
     fig.set_size_inches(2.5, 4)
     plt.savefig('Fig 4A - Eukaryotes_NumberSRproteins.tiff', bbox_inches='tight', dpi=600)
@@ -84,7 +84,7 @@ def plotting(df):
     plt.yticks(fontname='Arial', fontsize=12)
     plt.xlabel('Domain of Life', fontname='Arial', fontsize=14)
     # plt.xlabel('')
-    plt.ylabel('Number of Unique\nSR Protein-encoding Genes', fontname='Arial', fontsize=14)
+    plt.ylabel('Number of Unique Genes Encoding\nSR/SR-related Proteins', fontname='Arial', fontsize=14)
     fig = plt.gcf()
     fig.set_size_inches(6, 4)
     
