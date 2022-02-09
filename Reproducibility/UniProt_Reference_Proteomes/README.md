@@ -97,6 +97,10 @@ python LCD-Composer_MultiProteome_MaxCompThreshold.py Viruses_S-rich-only_RESULT
 8. Navigate to this new location via command line and run the following commands in-sequence:
 
 ```    
+python Merge_Final_RSdomains.py
+```
+
+```    
 python get_DomainsOfLife_OrganismList_df.py
 ```
 
@@ -118,4 +122,12 @@ python map_Pfams_to_Srich_and_Rrich_prots.py
 
 ```    
 python plot_TopPfamAnnotations.py
+```
+
+```
+python determine_top10_Pfams.py
+```
+
+```
+python calc_PfamEnrichment_SRprots_vs_Srich_or_Rrich_prots.py
 ```
