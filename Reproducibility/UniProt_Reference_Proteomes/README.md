@@ -2,7 +2,7 @@
 
 ### Instructions
 1. Download all files in the UniProt_Reference_Proteomes directory.
-2. Download all relevant Pfam annotation files from https://figshare.com/account/articles/19141799 and extract in the same location as the files from Step 1.
+2. Download and extract all of the relevant Pfam annotation files from https://figshare.com/account/articles/19141799.
 3. Download all archaeal, bacterial, eukaryotic, and viral proteomes from https://figshare.com/articles/dataset/Archaea_ProteinSequences/12937637, (https://figshare.com/articles/dataset/Bacteria_ProteinSequences_Part1/12939812, https://figshare.com/articles/dataset/Bacteria_ProteinSequences_Part2/12939980), (https://figshare.com/articles/dataset/Eukaryota_ProteinSequences_Part1/12937703, https://figshare.com/articles/dataset/Eukaryota_ProteinSequences_Part2/12939479), and https://figshare.com/articles/dataset/Viruses_ProteinSequences/12942362 respectively. NOTE: the bacterial and eukaryotic sets were split into two downloads due to file size constraints.
 4. Extract the proteome files *__in separate folders corresponding to each domain of life. The folders MUST be named "Archaea", "Bacteria", "Eukaryota", and "Viruses", respectively__*.
 5. Place a copy of the "LCD-Composer_MultiProteome_MaxCompThreshold.py", "make_SRcompRange_BatchFile_DomainsOfLife.py", and "get_SR_prots_above_CombinedSRthreshold_MultiProteome.py" scripts into each of the folders that you created in Step 4. By default, the LCD-Composer_MultiProteome_MaxCompThreshold.py script will scan all sub-folders for FASTA files, so each of the folders should only contain the above-mentioned files with no other subfolders or FASTA files.
@@ -94,7 +94,7 @@ python LCD-Composer_MultiProteome_MaxCompThreshold.py Viruses_R-rich-only_RESULT
 python LCD-Composer_MultiProteome_MaxCompThreshold.py Viruses_S-rich-only_RESULTS -a S -c 35 -x S_R -m 40_5
 ```
 
-7. Once all of the commands listed above have finished running, each folder should contain: 1) a file ending in "SequenceDictionary" (.dat file), 2) a file ending in "SR_proteins_with_Combined_S-R_Above_70" (.tsv file), 3) a file ending in "R-richOnly_RESULTS" (.tsv file), and 4) a file ending in "S-richOnly_RESULTS" (.tsv file). Copy these files from each folder into a single location that also contains the remaining scripts from this Github directory.
+7. Once all of the commands listed above have finished running, each folder should contain: 1) a file ending in "SequenceDictionary" (.dat file), 2) a file ending in "SR_proteins_with_Combined_S-R_Above_70" (.tsv file), 3) a file ending in "R-richOnly_RESULTS" (.tsv file), and 4) a file ending in "S-richOnly_RESULTS" (.tsv file). Copy these files from each folder into a single location that also contains the remaining scripts from this Github directory. This location should also contain all of the extracted Pfam annotation files from Step 2 above.
 8. Navigate to this new location via command line and run the following commands in-sequence:
 
 ```    
