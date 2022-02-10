@@ -30,6 +30,10 @@ python gather_Pfam_Clan_Information.py
 python gather_Combined_RBPs.py
 ```
 
+```
+python plot_Human_SR-SK_range_ProteinFrequencyHeatmap.py
+```
+
 ```    
 python get_SR_prots_and_Plot_RBPproportions_Heatmap.py
 ```
