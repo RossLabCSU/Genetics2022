@@ -20,9 +20,9 @@ def main():
         sr_only, lc_only, lc_and_sr, ds_only, sr_and_ds, lc_and_ds, lc_and_sr_and_ds = get_dataset_overlaps(sr_prots, rbps, lc_prots, ds_prots, dataset_label)
 
         if 'MixedCharge' in dataset:
-            venn = venn3(subsets = (sr_only, lc_only, lc_and_sr, ds_only, sr_and_ds, lc_and_ds, lc_and_sr_and_ds), set_labels=('New SR/SR-related Proteins\n(Cascarina and Ross 2021)', 'Known SR Proteins\n(Long and Caceres 2009)', 'Mixed-Charge Proteins\n(Greig et al. 2020)'), alpha=0.5)
+            venn = venn3(subsets = (sr_only, lc_only, lc_and_sr, ds_only, sr_and_ds, lc_and_ds, lc_and_sr_and_ds), set_labels=('New SR/SR-related Proteins\n(This study)', 'Known SR Proteins\n(Long and Caceres 2009)', 'Mixed-Charge Proteins\n(Greig et al. 2020)'), alpha=0.5)
         else:
-            venn = venn3(subsets = (sr_only, lc_only, lc_and_sr, ds_only, sr_and_ds, lc_and_ds, lc_and_sr_and_ds), set_labels=('New SR/SR-related Proteins\n(Cascarina and Ross 2021)', 'Known SR Proteins\n(Long and Caceres 2009)', 'Mouse Homologs\n(Calarco et al. 2009)'), alpha=0.5)
+            venn = venn3(subsets = (sr_only, lc_only, lc_and_sr, ds_only, sr_and_ds, lc_and_ds, lc_and_sr_and_ds), set_labels=('New SR/SR-related Proteins\n(This study)', 'Known SR Proteins\n(Long and Caceres 2009)', 'Mouse Homologs\n(Calarco et al. 2009)'), alpha=0.5)
         
         for text in venn.set_labels:
             text.set_fontsize(16)
