@@ -28,4 +28,4 @@ python Run_GOanalyses.py
 python get_GO_Annotations_Q8N5F7.py
 ```
 
-This series of commands generate data appearing in Fig 1D, Fig S3B, Fig S3D, Table S3, Table S4, Table S11, and Table S12.
+This series of commands generates data appearing in Fig 1D, Fig S3B, Fig S3D, Tables S2-S4, Table S11, and Table S12.
