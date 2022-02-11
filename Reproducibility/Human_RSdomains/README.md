@@ -106,4 +106,8 @@ python plot_VennDiagrams_VariedCompositionThreshold.py
 python plot_DatasetOverlaps_VennDiagrams.py
 ```
 
-This series of commands generates Fig 1C, Fig S3A, Fig S3C, and all venn diagrams appearing in Fig S2.
+```
+python plot_VariedCombinedSRcomposition_LCprots_vs_NewSRprots.py
+```
+
+This series of commands generates Fig 1C, Fig S3A, Fig S3C, Fig S2B and all venn diagrams appearing in Fig S2A.
