@@ -14,3 +14,6 @@ This directory and all subsequent directories contain all necessary information 
 | GOATOOLS | 1.0.2 |
 | mpmath | 1.1.0 |
 | matplotlib_venn | 0.11.5 |
+
+## License info
+All code in this directory and sub-directories are subject to the terms of the GPLv3 license.
