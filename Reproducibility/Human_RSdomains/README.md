@@ -94,7 +94,7 @@ python gather_SpecificProtSeqs_IsoformDomainSchematics.py
 python plot_IsoformsDomainSchematics.py
 ```
 
-This series of commands generates Fig 3, Fig S6, and Table S3.
+This series of commands generates Fig 3, Fig S6, and Table S5.
 </br></br></br>
 For comparison of human SR/SR-related proteins in this study with those of other studies, run the following commands in-sequence:
 
