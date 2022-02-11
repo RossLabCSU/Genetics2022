@@ -11,5 +11,6 @@ This directory and all subsequent directories contain all necessary information 
 | Matplotlib | 3.1.1 |
 | Seaborn | 0.9.0 |
 | Biopython | 1.76 |
-| GOATOOLS | 1.16.5 |
-
+| GOATOOLS | 1.0.2 |
+| mpmath | 1.1.0 |
+| matplotlib_venn | 0.11.5 |
