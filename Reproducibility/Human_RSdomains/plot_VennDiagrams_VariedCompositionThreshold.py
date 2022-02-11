@@ -50,7 +50,7 @@ def main():
         if threshold == 70:
             plt.savefig('Fig 1C - Human_RSdomainProteins_Combined-SR-Threshold_' + str(threshold) + '.tiff', bbox_inches='tight', dpi=600)
         else:
-            plt.savefig('Fig S2 - Human_RSdomainProteins_Combined-SR-Threshold_' + str(threshold) + '.tiff', bbox_inches='tight', dpi=600)
+            plt.savefig('Fig S2A - Human_RSdomainProteins_Combined-SR-Threshold_' + str(threshold) + '.tiff', bbox_inches='tight', dpi=600)
         plt.close()
         
     
