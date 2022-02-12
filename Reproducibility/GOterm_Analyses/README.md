@@ -2,8 +2,8 @@
 
 ### Instructions
 1. Download all files in the GOterm_Analyses directory.
-2. Download the "HumanReferenceProteom.zip and the "All_SRprots_Long_and_Caceres_2009.txt" file from the Human_RSdomains directory and place them in the same location as the files from Step 1.
-3. Download the "LCD-Composer_MultiProteome_MaxCompThreshold.py" script, the "TaxonID_to_Organism.zip" file, and the "TaxonID_to_CommonOrganismName.dat" file from the UniProt_Reference_Proteomes directory and place them in the same location as the files from Steps 1 and 2.
+2. Copy the "UP000005640_9606.fasta" file (must be extracted from "HumanReferenceProteome.zip") and the "All_SRprots_Long_and_Caceres_2009.txt" file from the Human_RSdomains directory and place them in the same location as the files from Step 1.
+3. Download the "LCD-Composer_MultiProteome_MaxCompThreshold.py" script, the "TaxonID_to_Organism_ReferenceProteomes.dat" file, and the "TaxonID_to_CommonOrganismName.dat" file from the UniProt_Reference_Proteomes directory and place them in the same location as the files from Steps 1 and 2.
 4. Extract all compressed files in the same location as the downloaded files.
 5. Navigate to appropriate folder via command line.
 6. Run the following commands in-sequence (NOTE: each run must be completed before issuing the next command):
