@@ -87,7 +87,7 @@ python plot_IsoformMatchingProportions.py
 ```
 
 ```
-python gather_SpecificProtSeqs_IsoformDomainSchematics.py
+python gather_SelectProtSeqs_IsoformDomainSchematics.py
 ```
 
 ```
