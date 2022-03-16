@@ -138,7 +138,7 @@ def plotting(iso_df, seqs_df):
     
 def get_isoforms():
     # ALSO COLLECTS UNIPROT IDs FOR ISOFORMS THAT WERE NOT IDENTIFIED AS SR/SR-RELATED PROTEINS
-    h = open('TableS5_Human_RSdomains_IsoformComparison.tsv')
+    h = open('TableS7_Human_RSdomains_IsoformComparison.tsv')
     header = h.readline()
     df = {}
     iso_tracker = {}
