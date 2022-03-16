@@ -12,7 +12,7 @@ def main():
     sr_top10_pfams = pickle.load(open('SR_proteins_top10_Pfams_dict.dat', 'rb'))
     residues = ['R', 'S']
     
-    output = open('TableS10_Pfam_Enrichment_SRprots.tsv', 'w')
+    output = open('TableS12_Pfam_Enrichment_SRprots.tsv', 'w')
     output.write('\t'.join( ['Domain of Life', 'Pfam Annotation', 'Comparison Group', '# of Occurrences in SR/SR-related Proteins', '# of All Other Pfams in SR/SR-related Proteins', '# of Occurrences in Comparsion Group', '# of All Other Pfams in Comparison Group', 'Odds Ratio', 'lnOR', '95% CI Lower Bound for lnOR Estimate', '95% CI Upper Bound for lnOR Estimate', 'P-value', 'Holm-Sidak Corrected P-value'] ))
     output.write('\t\tNOTE: positive lnOR values indicate enrichment of the associated Pfam annotation in the SR/SR-related protein set relative to the "Comparison Group", whereas negative lnOR values indicate enrichment of the associated Pfam annotation in the "Comparison Group" relative to the "Protein Set of Origin"\n')
     
