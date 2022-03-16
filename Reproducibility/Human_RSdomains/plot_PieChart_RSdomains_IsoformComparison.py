@@ -4,7 +4,7 @@ import seaborn as sns
 
 def main():
 
-    h = open('TableS5_Human_RSdomains_IsoformComparison.tsv')
+    h = open('TableS7_Human_RSdomains_IsoformComparison.tsv')
     header = h.readline()
     match_and_AllIsos = 0
     match_but_NotAllIsos = 0
