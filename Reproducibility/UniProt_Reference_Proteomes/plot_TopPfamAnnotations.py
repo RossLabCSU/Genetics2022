@@ -2,7 +2,7 @@
 import matplotlib.pyplot as plt
 import seaborn as sns
 domains = ['Archaea', 'Bacteria', 'Eukaryota', 'Viruses']
-file_leaders = {'Archaea':'TableS6', 'Bacteria':'TableS7', 'Eukaryota':'TableS8', 'Viruses':'TableS9'}
+file_leaders = {'Archaea':'TableS8', 'Bacteria':'TableS9', 'Eukaryota':'TableS10', 'Viruses':'TableS11'}
 
 def main():
 
