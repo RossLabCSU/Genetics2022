@@ -109,7 +109,7 @@ def plot_isos_with_perfect_match(df):
         
 def get_max_proportionMatching():
     
-    h = open('TableS5_Human_RSdomains_IsoformComparison.tsv')
+    h = open('TableS7_Human_RSdomains_IsoformComparison.tsv')
     header = h.readline()
     seqs_df = {}
     for line in h:
@@ -139,7 +139,7 @@ def get_max_proportionMatching():
     
 def get_num_isos_with_RS():
     
-    h = open('TableS5_Human_RSdomains_IsoformComparison.tsv')
+    h = open('TableS7_Human_RSdomains_IsoformComparison.tsv')
     header = h.readline()
     proportion_isos = {}
     for line in h:
