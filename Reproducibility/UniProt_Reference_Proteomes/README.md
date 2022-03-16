@@ -132,4 +132,4 @@ python determine_top10_Pfams.py
 python calc_PfamEnrichment_SRprots_vs_Srich_or_Rrich_prots.py
 ```
 
-This series of commands generates Fig 4B-E, as well as the final versions of Tables S6-S10.
+This series of commands generates Fig 4B-E, as well as the final versions of Tables S8-S12.
