@@ -106,7 +106,7 @@ def get_other_Pfams(aa, shared_prots_df):
     
 def get_SRprot_Pfams(shared_prots_df):
     
-    leaders = {'Archaea':'TableS6', 'Bacteria':'TableS7', 'Eukaryota':'TableS8', 'Viruses':'TableS9'}
+    leaders = {'Archaea':'TableS8', 'Bacteria':'TableS9', 'Eukaryota':'TableS10', 'Viruses':'TableS11'}
     pfam_df = {}
     prots_df = {}
     
