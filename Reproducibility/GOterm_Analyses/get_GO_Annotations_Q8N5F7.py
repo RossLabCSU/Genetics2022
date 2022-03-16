@@ -5,7 +5,7 @@ def main():
 
     protein = 'Q8N5F7'
     h = open('Hsapiens.gaf')
-    output = open('TableS12_' + protein + '_GO_Annotations.tsv', 'w')
+    output = open('TableS14_' + protein + '_GO_Annotations.tsv', 'w')
     header = header = ['Database', 'Protein ID', 'Common Gene Name', 'Qualifier', 'GO id', 'GO name', 'GO namespace', 'GO definition', 'Literature reference', 'Evidence code', '', 'Aspect (Function, Process, Component)', 'Object symbol', 'Object synonym', 'Object type', 'Tax ID', 'Date of annotation', 'Assigned by']
     output.write('\t'.join(header) + '\n')
     go_descriptions = get_go_descriptions()
