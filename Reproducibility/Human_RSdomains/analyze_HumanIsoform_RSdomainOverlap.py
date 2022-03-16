@@ -14,7 +14,7 @@ def main():
     lc_prots = get_LC_prots()
     merged_domains, merged_boundaries = get_merged_domains(domains_df, seqs_df)
     
-    output = open('TableS5_Human_RSdomains_IsoformComparison.tsv', 'w')
+    output = open('TableS7_Human_RSdomains_IsoformComparison.tsv', 'w')
     
     h = open('SR_proteins_with_Combined_S-R_Above_70_ALL_ISOFORMS.tsv')
     header = h.readline().rstrip().split('\t')
