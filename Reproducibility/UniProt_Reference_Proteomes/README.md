@@ -148,3 +148,43 @@ python mask_RSdomains_QuerySequences.py Archaea
 ```
 python mask_RSdomains_QuerySequences.py Bacteria
 ```
+
+```
+python get_Filename_Mapping.py Archaea
+```
+
+```
+python get_Filename_Mapping.py Bacteria
+```
+
+```
+python make_makeblastdb_BatchFile.py Archaea
+```
+
+```
+./RUN_makeblastdb_Batch_AllArchaeaProteomes.bat
+```
+
+```
+python make_makeblastdb_BatchFile.py Bacteria
+```
+
+```
+./RUN_makeblastdb_Batch_AllBacteriaProteomes.bat
+```
+
+```
+python make_blastp_Commands_BatchFile.py Archaea
+```
+
+```
+./RUN_blastp_Commands_Batch_AllArchaeaProteomes.bat
+```
+
+```
+python make_blastp_Commands_BatchFile.py Bacteria
+```
+
+```
+./RUN_blastp_Commands_Batch_AllBacteriaProteomes.bat
+```
