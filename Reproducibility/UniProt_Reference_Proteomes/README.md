@@ -214,6 +214,10 @@ python plot_Helicase-SRprot_BLASTmatches_vs_AllOtherProts.py Archaea
 ```
 
 ```
+python calc_domain_positions_Helicase-SRprots.py Archaea
+```
+
+```
 python make_Helicase-SRprots_HitSeqsFiles_for_ReciprocalBestHitsSearch.py Bacteria
 ```
 
@@ -223,4 +227,21 @@ python make_blastp_Commands_BatchFile_ReciprocalBestHitsSearch.py Bacteria
 
 ```
 .\RUN_blastp_Commands_Batch_Bacteria_ReciprocalBestHitsSearch.bat
+```
+
+
+```
+python get_Helicase-SRprots_TopHits_RSdomainsMasked_MAPPING_DATA.py Bacteria
+```
+
+```
+python check_for_ReciprocalBestHits_Helicase-SRprots.py Bacteria
+```
+
+```
+python plot_Helicase-SRprot_BLASTmatches_vs_AllOtherProts.py Bacteria
+```
+
+```
+python calc_domain_positions_Helicase-SRprots.py Bacteria
 ```
