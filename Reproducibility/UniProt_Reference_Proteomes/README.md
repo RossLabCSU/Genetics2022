@@ -214,7 +214,7 @@ python plot_Helicase-SRprot_BLASTmatches_vs_AllOtherProts.py Archaea
 ```
 
 ```
-python calc_domain_positions_Helicase-SRprots.py Archaea
+python calc_domain_positions.py Archaea
 ```
 
 ```
@@ -243,5 +243,5 @@ python plot_Helicase-SRprot_BLASTmatches_vs_AllOtherProts.py Bacteria
 ```
 
 ```
-python calc_domain_positions_Helicase-SRprots.py Bacteria
+python calc_domain_positions.py Bacteria
 ```
