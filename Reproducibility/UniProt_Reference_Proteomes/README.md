@@ -188,3 +188,27 @@ python make_blastp_Commands_BatchFile.py Bacteria
 ```
 ./RUN_blastp_Commands_Batch_AllBacteriaProteomes.bat
 ```
+
+```
+python make_Helicase-SRprots_HitSeqsFiles_for_ReciprocalBestHitsSearch.py Archaea
+```
+
+```
+python make_blastp_Commands_BatchFile_ReciprocalBestHitsSearch.py Archaea
+```
+
+```
+.\RUN_blastp_Commands_Batch_Archaea_ReciprocalBestHitsSearch.bat
+```
+
+```
+python make_Helicase-SRprots_HitSeqsFiles_for_ReciprocalBestHitsSearch.py Bacteria
+```
+
+```
+python make_blastp_Commands_BatchFile_ReciprocalBestHitsSearch.py Bacteria
+```
+
+```
+.\RUN_blastp_Commands_Batch_Bacteria_ReciprocalBestHitsSearch.bat
+```
