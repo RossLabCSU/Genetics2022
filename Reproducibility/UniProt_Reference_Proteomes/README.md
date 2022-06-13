@@ -72,7 +72,7 @@ python LCD-Composer_MultiProteome_MaxCompThreshold.py Eukaryota_R-rich-only_RESU
 python LCD-Composer_MultiProteome_MaxCompThreshold.py Eukaryota_S-rich-only_RESULTS -a S -c 35 -x S_R -m 40_5
 ```
 
-In the Viruses folder, you will also need to copy the files "Coronavirus_NucleocapsidIDs.txt" and "AllCoronavirusNucleocapsidProteins_Gathered_Pfam_Results.dat" into the folder to analyze. Then run the following commands:
+In the Viruses folder, you will also need to copy the files "Coronavirus_NucleocapsidIDs.txt" and "AllCoronavirusNucleocapsidProteins_Gathered_Pfam_Results.dat" as well as the necessary scripts (indicated in the commands below) into the folder. Then run the following commands:
 ```    
 python make_SRcompRange_BatchFile_DomainsOfLife.py Viruses
 ```
@@ -148,9 +148,9 @@ This series of commands generates Fig 4B-E, as well as the final versions of Tab
 
 For BLAST analyses to identify orthologs of SR-related helicases in archaea and bacteria, you must first:
 1. Install BLAST version 2.10.1.
-2. Copy all archaeal and bacterial proteomes not ending in "additional.fasta" to the bin folder located in the installed BLAST folder.
-3. Copy necessary scripts and text files into the bin folder.
-4. Copy TableS8 (Archaea) and TableS9 (Bacteria) generated from the commands above into the bin folder.
+2. Copy all archaeal and bacterial proteomes not ending in "additional.fasta" to the "bin" folder located in the installed BLAST folder.
+3. Copy necessary scripts (indicated in the commands below) and text files ("Archaeal_Helicase-SRprots_IDlist.txt", "Bacterial_Helicase-SRprots_IDlist.txt", "ArchaealProteomes_List.txt", and "BacterialProteomes_List.txt") into the "bin" folder.
+4. Copy TableS8 (Archaea) and TableS9 (Bacteria) generated from the commands above into the "bin" folder.
 5. Run the following commands (IMPORTANT NOTE: in total, these commands will end up generating ~5million files. Opening this folder with a graphical viewer may crash the viewer and possibly your computer. Command-line navigation is recommended. These commands may also take several days to finish running.):
 
 ```
