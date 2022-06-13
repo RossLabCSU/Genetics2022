@@ -151,7 +151,7 @@ For BLAST analyses to identify orthologs of SR-related helicases in archaea and 
 2. Copy all archaeal and bacterial proteomes not ending in "additional.fasta" to the "bin" folder located in the installed BLAST folder.
 3. Copy necessary scripts (indicated in the commands below) and text files ("Archaeal_Helicase-SRprots_IDlist.txt", "Bacterial_Helicase-SRprots_IDlist.txt", "ArchaealProteomes_List.txt", and "BacterialProteomes_List.txt") into the "bin" folder.
 4. Copy TableS8 (Archaea) and TableS9 (Bacteria) generated from the commands above into the "bin" folder.
-5. Run the following commands (IMPORTANT NOTE: in total, these commands will end up generating ~5million files. Opening this folder with a graphical viewer may crash the viewer and possibly your computer. Command-line navigation is recommended. These commands may also take several days to finish running.):
+5. Run the following commands (IMPORTANT NOTE: in total, these commands will end up generating ~5million files. Opening this folder with a graphical viewer may crash the viewer and/or your computer. Command-line-only navigation is recommended. These commands may also take several days to finish running.):
 
 ```
 python mask_RSdomains_QuerySequences.py Archaea
