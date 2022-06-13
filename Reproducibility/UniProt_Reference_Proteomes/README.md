@@ -144,7 +144,11 @@ python determine_top10_Pfams.py
 python calc_PfamEnrichment_SRprots_vs_Srich_or_Rrich_prots.py
 ```
 
-This series of commands generates Fig 4B-E, as well as the final versions of Tables S8-S12.
+```
+python plot_RSdomain_Compositions_DomainsOfLife.py
+```
+
+This series of commands generates Fig 4B-E and Fig S7, as well as the final versions of Tables S8-S12.
 
 For BLAST analyses to identify orthologs of SR-related helicases in archaea and bacteria, you must first:
 1. Install BLAST version 2.10.1.
