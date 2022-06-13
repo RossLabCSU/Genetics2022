@@ -147,26 +147,18 @@ python calc_PfamEnrichment_SRprots_vs_Srich_or_Rrich_prots.py
 This series of commands generates Fig 4B-E, as well as the final versions of Tables S8-S12.
 
 For BLAST analyses to identify orthologs of SR-related helicases in archaea and bacteria, you must first:
-1. Install BLAST version 2.10.1 on your local machine.
+1. Install BLAST version 2.10.1.
 2. Copy all archaeal and bacterial proteomes not ending in "additional.fasta" to the bin folder located in the installed BLAST folder.
 3. Copy necessary scripts and text files into the bin folder.
 4. Copy TableS8 (Archaea) and TableS9 (Bacteria) generated from the commands above into the bin folder.
-5. Run the following commands (IMPORTANT NOTE: in total, these commands will end up generating ~5million files. Opening this folder with a graphical viewer may crash the viewer and possibly your computer. Command-line navigation is recommended):
+5. Run the following commands (IMPORTANT NOTE: in total, these commands will end up generating ~5million files. Opening this folder with a graphical viewer may crash the viewer and possibly your computer. Command-line navigation is recommended. These commands may also take several days to finish running.):
 
 ```
 python mask_RSdomains_QuerySequences.py Archaea
 ```
 
 ```
-python mask_RSdomains_QuerySequences.py Bacteria
-```
-
-```
 python get_Filename_Mapping.py Archaea
-```
-
-```
-python get_Filename_Mapping.py Bacteria
 ```
 
 ```
@@ -178,27 +170,11 @@ python make_makeblastdb_BatchFile.py Archaea
 ```
 
 ```
-python make_makeblastdb_BatchFile.py Bacteria
-```
-
-```
-./RUN_makeblastdb_Batch_AllBacteriaProteomes.bat
-```
-
-```
 python make_blastp_Commands_BatchFile.py Archaea
 ```
 
 ```
 ./RUN_blastp_Commands_Batch_AllArchaeaProteomes.bat
-```
-
-```
-python make_blastp_Commands_BatchFile.py Bacteria
-```
-
-```
-./RUN_blastp_Commands_Batch_AllBacteriaProteomes.bat
 ```
 
 ```
@@ -230,6 +206,30 @@ python calc_domain_positions.py Archaea
 ```
 
 ```
+python mask_RSdomains_QuerySequences.py Bacteria
+```
+
+```
+python get_Filename_Mapping.py Bacteria
+```
+
+```
+python make_makeblastdb_BatchFile.py Bacteria
+```
+
+```
+./RUN_makeblastdb_Batch_AllBacteriaProteomes.bat
+```
+
+```
+python make_blastp_Commands_BatchFile.py Bacteria
+```
+
+```
+./RUN_blastp_Commands_Batch_AllBacteriaProteomes.bat
+```
+
+```
 python make_Helicase-SRprots_HitSeqsFiles_for_ReciprocalBestHitsSearch.py Bacteria
 ```
 
@@ -240,7 +240,6 @@ python make_blastp_Commands_BatchFile_ReciprocalBestHitsSearch.py Bacteria
 ```
 .\RUN_blastp_Commands_Batch_Bacteria_ReciprocalBestHitsSearch.bat
 ```
-
 
 ```
 python get_Helicase-SRprots_TopHits_RSdomainsMasked_MAPPING_DATA.py Bacteria
