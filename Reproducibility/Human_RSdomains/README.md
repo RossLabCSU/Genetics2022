@@ -111,3 +111,13 @@ python plot_VariedCombinedSRcomposition_LCprots_vs_NewSRprots.py
 ```
 
 This series of commands generates Table S5, Fig 1C, Fig S3A, Fig S3C, Fig S2B and all venn diagrams appearing in Fig S2A.
+</br></br></br>
+For in-depth comparison of experimental data for known-, new-, and non-SR-related RBPs:
+1. Download the "catrapid_human_basic.zip" file from the RNAct database (https://rnact.crg.eu/download) and extract the file (NOTE: this will be ~63GB when de-compressed).
+2. Run the following commands in-sequence:
+
+```
+python plot_RNAtargets_ALL_RBPs.py
+```
+
+This series of commands generates all panels in Fig 4.
