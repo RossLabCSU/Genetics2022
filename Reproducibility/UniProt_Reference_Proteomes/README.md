@@ -72,7 +72,7 @@ python LCD-Composer_MultiProteome_MaxCompThreshold.py Eukaryota_R-rich-only_RESU
 python LCD-Composer_MultiProteome_MaxCompThreshold.py Eukaryota_S-rich-only_RESULTS -a S -c 35 -x S_R -m 40_5
 ```
 
-In the Viruses folder run the following commands:
+In the Viruses folder, you will also need to copy the files "Coronavirus_NucleocapsidIDs.txt" and "AllCoronavirusNucleocapsidProteins_Gathered_Pfam_Results.dat" into the folder to analyze. Then run the following commands:
 ```    
 python make_SRcompRange_BatchFile_DomainsOfLife.py Viruses
 ```
@@ -93,7 +93,19 @@ python LCD-Composer_MultiProteome_MaxCompThreshold.py Viruses_R-rich-only_RESULT
 python LCD-Composer_MultiProteome_MaxCompThreshold.py Viruses_S-rich-only_RESULTS -a S -c 35 -x S_R -m 40_5
 ```
 
-7. Once all of the commands listed above have finished running, each folder should contain: 1) a file ending in "SequenceDictionary" (.dat file), 2) a file ending in "SR_proteins_with_Combined_S-R_Above_70" (.tsv file), 3) a file ending in "R-richOnly_RESULTS" (.tsv file), and 4) a file ending in "S-richOnly_RESULTS" (.tsv file). Copy these files from each folder into a single location that also contains the remaining scripts from this Github directory. This location should also contain all of the extracted Pfam annotation files from Step 2 above.
+```
+python map_Pfams_to_CoronavirusNucleocapsids.py
+```
+
+```
+python Max_SR_scan_10percMin_OmitUnscoredProts.py Coronaviruses
+```
+
+```
+python plot_ProteinOrthologs_vs_AllOtherProts.py Coronaviruses
+```
+
+7. Once all of the commands listed above have finished running, each folder should contain: 1) a file ending in "SequenceDictionary" (.dat file), 2) a file ending in "SR_proteins_with_Combined_S-R_Above_70" (.tsv file), 3) a file ending in "R-richOnly_RESULTS" (.tsv file), and 4) a file ending in "S-richOnly_RESULTS" (.tsv file). Copy these files from each folder into a single location that also contains the remaining scripts from this Github directory. This location should also contain all of the extracted Pfam annotation files from Step 2 above. The additional commands for analysis of coronavirus nucleocapsid proteins will generate panels appearing in Fig S8.
 8. Navigate to this new location via command line and run the following commands in-sequence:
 
 ```    
@@ -210,7 +222,7 @@ python check_for_ReciprocalBestHits_Helicase-SRprots.py Archaea
 ```
 
 ```
-python plot_Helicase-SRprot_BLASTmatches_vs_AllOtherProts.py Archaea
+python plot_ProteinOrthologs_vs_AllOtherProts.py Archaea
 ```
 
 ```
@@ -239,7 +251,7 @@ python check_for_ReciprocalBestHits_Helicase-SRprots.py Bacteria
 ```
 
 ```
-python plot_Helicase-SRprot_BLASTmatches_vs_AllOtherProts.py Bacteria
+python plot_ProteinOrthologs_vs_AllOtherProts.py Bacteria
 ```
 
 ```
