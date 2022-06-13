@@ -72,7 +72,7 @@ python LCD-Composer_MultiProteome_MaxCompThreshold.py Eukaryota_R-rich-only_RESU
 python LCD-Composer_MultiProteome_MaxCompThreshold.py Eukaryota_S-rich-only_RESULTS -a S -c 35 -x S_R -m 40_5
 ```
 
-In the Viruses folder, you will also need to copy the files "Coronavirus_NucleocapsidIDs.txt" and "AllCoronavirusNucleocapsidProteins_Gathered_Pfam_Results.dat" as well as the necessary scripts (indicated in the commands below) into the folder. Then run the following commands:
+In the Viruses folder, you will also need to copy the files "Coronavirus_NucleocapsidIDs.txt", "CoronavirusProteomes_List.txt", and "AllCoronavirusNucleocapsidProteins_Gathered_Pfam_Results.dat" as well as the necessary scripts (indicated in the commands below) into the folder. Then run the following commands:
 ```    
 python make_SRcompRange_BatchFile_DomainsOfLife.py Viruses
 ```
