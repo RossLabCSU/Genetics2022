@@ -116,7 +116,8 @@ For in-depth comparison of experimental data for known-, new-, and non-SR-relate
 1. Download "Supplementary information 3(table) from Gerstberger et al. (2014)(PMID:25365966, https://www.nature.com/articles/nrg3813).
 2. Open the file in MS Excel, navigate to the spreadsheet titled "RBP table", and save this sheet as the file type "Text (Tab delimited) (\*.txt)" with the file name "SupplementaryInfo3_RNAtarget_Categories.txt".
 3. Download the "catrapid_human_basic.zip" file and the "RNAct_supporting_tables.zip" file from the RNAct database (https://rnact.crg.eu/download), then extract the files (NOTE: the "catrapid_human_basic.zip" file will be ~63GB when de-compressed).
-4. Run the following commands in-sequence:
+4. Caveat: since these files are not ours to redistribute, they may be subject to change/updates, which could affect the final outcome of these analyses.
+5. Run the following commands in-sequence:
 
 ```
 python plot_RNAtargets_ALL_RBPs.py
