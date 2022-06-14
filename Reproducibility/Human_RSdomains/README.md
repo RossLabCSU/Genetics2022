@@ -131,3 +131,9 @@ python calculate_num_transcripts_bound_per_protein.py
 ```
 
 This series of commands generates all panels in Fig 4.
+</br></br></br>
+Finally, the following command was performed on the files downloaded from the RNAct database in order to estimate the *cat*RAPID score corresponding to a *z*-score of 1 for proteins in the eCLIP dataset:
+
+```
+python check_eCLIP_data.py
+```
