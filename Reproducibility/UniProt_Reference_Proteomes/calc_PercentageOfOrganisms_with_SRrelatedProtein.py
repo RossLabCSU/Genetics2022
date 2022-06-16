@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 domains = ['Archaea', 'Bacteria', 'Eukaryota', 'Viruses']
-table_nums = ['TableS6', 'TableS7', 'TableS8', 'TableS9']
+table_nums = ['TableS8', 'TableS9', 'TableS10', 'TableS11']
 numprots_df = pickle.load(open('TotalNumberOfProteins_per_Organism.dat', 'rb'))
 
 def main():
