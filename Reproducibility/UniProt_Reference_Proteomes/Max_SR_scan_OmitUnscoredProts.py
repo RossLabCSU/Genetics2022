@@ -5,6 +5,7 @@ from tqdm import tqdm
 import datetime
 import sys
 import argparse
+file_leaders = {'Archaea':'TableS13', 'Bacteria':'TableS14', 'Eukaryota':'TableS15', 'Viruses':'TableS16', 'Coronaviruses':''}
 
 def main(args):
 
@@ -16,7 +17,7 @@ def main(args):
     win_sizes = [20, 30, 40, 50]
     min_counts = [int(x*perc_threshold/100) for x in win_sizes]
     
-    output = open('Max_SR_scan_' + domain + '_Results_' + str(perc_threshold) + 'percMin_UnscoredProtsOmitted.tsv', 'w')
+    output = open(file_leaders[domain] + '_Max_SR_scan_' + domain + '_Results_' + str(perc_threshold) + 'percMin_UnscoredProtsOmitted.tsv', 'w')
     output.write('\t'.join(['File of Origin', 'UniProt ID'] + ['Maximum S+R Percentage in ' + str(win_size) + 'aa Window' for win_size in (20, 30, 40, 50)]) + '\n')
     print(domain, str(datetime.datetime.now()))
     
