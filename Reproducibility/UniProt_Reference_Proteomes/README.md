@@ -121,7 +121,7 @@ python Max_SR_scan_OmitUnscoredProts.py Coronaviruses
 python plot_ProteinOrthologs_vs_AllOtherProts.py Coronaviruses
 ```
 
-7. Once all of the commands listed above have finished running, each folder should contain: 1) a file ending in "SequenceDictionary" (.dat file), 2) a file ending in "SR_proteins_with_Combined_S-R_Above_70" (.tsv file), 3) a file ending in "R-richOnly_RESULTS" (.tsv file), and 4) a file ending in "S-richOnly_RESULTS" (.tsv file). Copy these files from each folder into a single location that also contains the remaining scripts from this Github directory. This location should also contain all of the extracted Pfam annotation files from Step 2 above. The additional commands for analysis of coronavirus nucleocapsid proteins will generate panels appearing in Fig S8.
+7. Once all of the commands listed above have finished running, each folder should contain: 1) a file ending in "SequenceDictionary" (.dat file), 2) a file ending in "SR_proteins_with_Combined_S-R_Above_70" (.tsv file), 3) a file ending in "R-richOnly_RESULTS" (.tsv file), 4) a file ending in "S-richOnly_RESULTS" (.tsv file), and 5) Supplemental Tables S13-S16. Copy these files from each folder into a single location that also contains the remaining scripts from this Github directory. This location should also contain all of the extracted Pfam annotation files from Step 2 above. The additional commands for analysis of coronavirus nucleocapsid proteins will generate panels appearing in Fig S8.
 8. Navigate to this new location via command line and run the following commands in-sequence:
 
 ```    
@@ -164,13 +164,13 @@ python calc_PfamEnrichment_SRprots_vs_Srich_or_Rrich_prots.py
 python plot_RSdomain_Compositions_DomainsOfLife.py
 ```
 
-This series of commands generates Fig 4B-E and Fig S7, as well as the final versions of Tables S8-S12.
+This series of commands generates Fig 4B-E and Fig S7, as well as the final versions of Supplemental Tables S8-S12.
 
 For BLAST analyses to identify orthologs of SR-related helicases in archaea and bacteria, you must first:
 1. Install BLAST version 2.10.1.
 2. Copy all archaeal and bacterial proteomes not ending in "additional.fasta" to the "bin" folder located in the installed BLAST folder.
 3. Copy necessary scripts (indicated in the commands below) and text files ("Archaeal_Helicase-SRprots_IDlist.txt", "Bacterial_Helicase-SRprots_IDlist.txt", "ArchaealProteomes_List.txt", and "BacterialProteomes_List.txt") into the "bin" folder.
-4. Copy TableS8 (Archaea) and TableS9 (Bacteria) generated from the commands above into the "bin" folder.
+4. Copy Supplemental Table S8 (Archaea) and Supplemental Table S9 (Bacteria) generated from the commands above into the "bin" folder.
 5. Run the following commands (IMPORTANT NOTE: in total, these commands will end up generating ~5million files. Opening this folder with a graphical viewer may crash the viewer and/or your computer. Command-line-only navigation is recommended. These commands may also take several days to finish running.):
 
 ```
