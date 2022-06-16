@@ -136,7 +136,7 @@ python get_DomainsOfLife_OrganismList_df.py
 python plot_NumberOfProts_with_SRdomain_DomainsOfLife.py
 ```
 
-These two commands generate Fig 4A and preliminary supplementary tables.
+These commands generate Fig 4A and preliminary supplementary tables.
 </br></br>
 For analyses of Pfam domain annotations among SR/SR-related proteins in the UniProt reference proteomes, run the following commands in-sequence:
 
