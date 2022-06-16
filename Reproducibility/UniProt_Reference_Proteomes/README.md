@@ -30,6 +30,10 @@ python LCD-Composer_MultiProteome_MaxCompThreshold.py Archaea_R-rich-only_RESULT
 python LCD-Composer_MultiProteome_MaxCompThreshold.py Archaea_S-rich-only_RESULTS -a S -c 35 -x S_R -m 40_5
 ```
 
+```
+python Max_SR_scan_OmitUnscoredProts.py Archaea
+```
+
 In the Bacteria folder run the following commands:
 ```    
 python make_SRcompRange_BatchFile_DomainsOfLife.py Bacteria
@@ -51,6 +55,10 @@ python LCD-Composer_MultiProteome_MaxCompThreshold.py Bacteria_R-rich-only_RESUL
 python LCD-Composer_MultiProteome_MaxCompThreshold.py Bacteria_S-rich-only_RESULTS -a S -c 35 -x S_R -m 40_5
 ```
 
+```
+python Max_SR_scan_OmitUnscoredProts.py Bacteria
+```
+
 In the Eukaryota folder run the following commands:
 ```    
 python make_SRcompRange_BatchFile_DomainsOfLife.py Eukaryota
@@ -70,6 +78,10 @@ python LCD-Composer_MultiProteome_MaxCompThreshold.py Eukaryota_R-rich-only_RESU
 
 ```
 python LCD-Composer_MultiProteome_MaxCompThreshold.py Eukaryota_S-rich-only_RESULTS -a S -c 35 -x S_R -m 40_5
+```
+
+```
+python Max_SR_scan_OmitUnscoredProts.py Eukaryota
 ```
 
 In the Viruses folder, you will also need to copy the files "Coronavirus_NucleocapsidIDs.txt", "CoronavirusProteomes_List.txt", and "AllCoronavirusNucleocapsidProteins_Gathered_Pfam_Results.dat" as well as the necessary scripts (indicated in the commands below) into the folder. Then run the following commands:
@@ -98,7 +110,11 @@ python map_Pfams_to_CoronavirusNucleocapsids.py
 ```
 
 ```
-python Max_SR_scan_10percMin_OmitUnscoredProts.py Coronaviruses
+python Max_SR_scan_OmitUnscoredProts.py Viruses
+```
+
+```
+python Max_SR_scan_OmitUnscoredProts.py Coronaviruses
 ```
 
 ```
