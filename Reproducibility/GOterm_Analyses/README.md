@@ -28,9 +28,9 @@ python Run_GOanalyses.py
 python get_GO_Annotations_Q8N5F7.py
 ```
 
-This series of commands generates data appearing in Fig 1D, Fig S3B, Fig S3D, Tables S2-S4, Table S13, and Table S14.
+This series of commands generates data appearing in Fig 1D, Fig S3B, Fig S3D, and Supplemental Tables S2-S4,S13-S14.
 </br></br></br>
-To generate Table S6 you must first generate Table S5 by running the commands in the "Human_RSdomains" directory. Once Table S5 has been generated, copy the Table S5 file into the same directory that you have been running the GO term analyses and run the following commands:
+To generate Supplemental Table S6 you must first generate Supplemental Table S5 by running the commands in the "Human_RSdomains" directory. Once Supplemental Table S5 has been generated, copy the Supplemental Table S5 file into the same directory that you have been running the GO term analyses and run the following commands:
 
 ```
 python Run_GOanalyses_VariedCompThreshold.py
