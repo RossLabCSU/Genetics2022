@@ -9,6 +9,9 @@ numprots_df = pickle.load(open('TotalNumberOfProteins_per_Organism.dat', 'rb'))
 
 def main():
 
+    output = open('PercentageOfProteins_with_RSdomain.tsv', 'w')
+    output.write('\t'.join(['Domain of Life', 'Proteome File', 'Number of Proteins with RS Domain', 'Total Number of Proteins in Proteome', 'Percentage of Proteins with RS Domain']) + '\n')
+    
     plotting_df = {'Domain':[],
                 'Percentage Organisms with SR prot':[]}
     for i, domain in enumerate(domains):
@@ -21,6 +24,8 @@ def main():
             total_prots = numprots_df[domain][file]
             perc_prots_with_RSdomain = num_srprots / total_prots * 100
 
+            output.write('\t'.join([domain, file] + [str(x) for x in [num_srprots, total_prots, perc_prots_with_RSdomain]]) + '\n')
+
             total_organisms += 1
             if num_srprots > 0:
                 num_organisms_with_srprot += 1
@@ -29,6 +34,8 @@ def main():
         plotting_df['Domain'].append(domain)
         plotting_df['Percentage Organisms with SR prot'].append( perc_orgs_with_srprot )
 
+    output.close()
+    
     plotting(plotting_df)
 
 
