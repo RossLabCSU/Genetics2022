@@ -182,6 +182,22 @@ python plot_Perc_Proteome_Containing_RSdomain.py
 
 This series of commands generates Figs 5A, 5B, and 5D.
 </br></br>
+In the same folder, run the following commands to analyze protein domain positions for select proteins:
+
+```
+python calc_domain_positions.py Archaea
+```
+
+```
+python calc_domain_positions.py Bacteria
+```
+
+```
+python calc_domain_positions.py Eukaryota
+```
+
+This series of commands generates all panels in Fig S8A.
+</br></br>
 For BLAST analyses to identify orthologs of SR-related helicases in archaea and bacteria, you must first:
 1. Install BLAST version 2.10.1.
 2. Copy all archaeal and bacterial proteomes not ending in "additional.fasta" to the "bin" folder located in the installed BLAST folder.
@@ -238,10 +254,6 @@ python plot_ProteinOrthologs_vs_AllOtherProts.py Archaea
 ```
 
 ```
-python calc_domain_positions.py Archaea
-```
-
-```
 python mask_RSdomains_QuerySequences.py Bacteria
 ```
 
@@ -289,6 +301,4 @@ python check_for_ReciprocalBestHits_Helicase-SRprots.py Bacteria
 python plot_ProteinOrthologs_vs_AllOtherProts.py Bacteria
 ```
 
-```
-python calc_domain_positions.py Bacteria
-```
+This series of commands generates Fig S8B.
