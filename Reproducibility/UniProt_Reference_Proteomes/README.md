@@ -136,7 +136,7 @@ python get_DomainsOfLife_OrganismList_df.py
 python plot_NumberOfProts_with_SRdomain_DomainsOfLife.py
 ```
 
-These commands generate Fig 4A and preliminary supplementary tables.
+These commands generate Fig 5C and preliminary supplementary tables.
 </br></br>
 For analyses of Pfam domain annotations among SR/SR-related proteins in the UniProt reference proteomes, run the following commands in-sequence:
 
@@ -164,8 +164,24 @@ python calc_PfamEnrichment_SRprots_vs_Srich_or_Rrich_prots.py
 python plot_RSdomain_Compositions_DomainsOfLife.py
 ```
 
-This series of commands generates Fig 4B-E and Fig S7, as well as the final versions of Supplemental Tables S8-S12.
+This series of commands generates Fig 5E-H and Fig S7, as well as the final versions of Supplemental Tables S8-S12.
+</br></br>
+Once Supplemental Tables S8-S11 have been generated, copy them into the folder directly above each of the domain-of-life-specific folders and run the following commands (all scripts must also be in the same folder):
 
+```
+python calc_PercentageOfOrganisms_with_SRrelatedProtein.py
+```
+
+```
+python calc_Fraction_of_Detected_SR-relatedProteins_PerBin.py
+```
+
+```
+python plot_Perc_Proteome_Containing_RSdomain.py
+```
+
+This series of commands generates Figs 5A, 5B, and 5D.
+</br></br>
 For BLAST analyses to identify orthologs of SR-related helicases in archaea and bacteria, you must first:
 1. Install BLAST version 2.10.1.
 2. Copy all archaeal and bacterial proteomes not ending in "additional.fasta" to the "bin" folder located in the installed BLAST folder.
