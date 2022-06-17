@@ -196,6 +196,10 @@ python calc_domain_positions.py Bacteria
 python calc_domain_positions.py Eukaryota
 ```
 
+```
+python calc_domain_positions.py Viruses
+```
+
 This series of commands generates all panels in Fig S8A.
 </br></br>
 For BLAST analyses to identify orthologs of SR-related helicases in archaea and bacteria, you must first:
