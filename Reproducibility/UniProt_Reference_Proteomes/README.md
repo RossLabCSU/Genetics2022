@@ -161,7 +161,7 @@ python calc_PfamEnrichment_SRprots_vs_Srich_or_Rrich_prots.py
 ```
 
 ```
-python plot_RSdomain_Compositions_DomainsOfLife.py
+python plot_RSdomain_Compositions_DomainsOfLife_Boxplot.py
 ```
 
 This series of commands generates Fig 5E-H and Fig S7, as well as the final versions of Supplemental Tables S8-S12.
