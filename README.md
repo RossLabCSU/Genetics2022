@@ -1,4 +1,4 @@
-# Reproduction of Data in Cascarina *et al.* (2022)
+# Reproduction of Data in [Cascarina and Ross (2022)](https://pubmed.ncbi.nlm.nih.gov/35863866/ "Link to Research Article")
 
 This directory and all subsequent directories contain all necessary information and code to reproduce the data in [Cascarina and Ross (2022) *RNA*](https://pubmed.ncbi.nlm.nih.gov/35863866/ "Link to Research Article"). Each subdirectory has a unique README file with a series of instructions for re-creating data and figures. Below is a list of dependencies and associated version numbers used for testing and data analysis:
 
